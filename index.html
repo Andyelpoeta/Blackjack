@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img-cartas/blackjack.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/quartz/bootstrap.min.css" integrity="sha512-4vNI8iuRG7crEutZfiKUF5d1o9ly8NS6OhQSzHb/s8K196HNl9AKWTAuFNOGi8ARC5ldelNbOuC1XdW1xMKP5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Juego BlackJack</title>
+</head>
+<body class="fondo__tablero">
+    
+    <header class="titulo">
+
+        <h3 class="nombre__titulo">BlackJack</h3>
+
+    </header>
+
+    <div class="row mt-2">
+        <div class=" col text-center">
+
+            <div class="grupo__botones">
+                <button type="button" id="boton__nuevoJuego" class="btn btn-outline-primary  botone">Nuevo Juego</button>
+                <button type="button" id="boton__pedirCarta" disabled="disabled"  class="btn btn-outline-success color__letra botone">Pedir carta</button>
+                <button type="button" id="boton__pausa" disabled="disabled"  class="btn btn-outline-success color__letra botone">Detener juego</button> 
+            </div>
+           
+            <div class="card border-secondary mb-3 mt-2 targeta" >
+                <div class="card-body cuerpo__targeta">    
+                        <div class="row container mb-2 caja__1">
+                            <div class="col">
+                                <h4 class="card-title">Jugador <small>0</small></h4>
+                                <div id="jugador__cartas" class="cartas_html">
+                                    <!-- <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset=""> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row container caja__1">
+                            <div class="col">
+                                <h4 class="card-title">Maquina <small>0</small></h4>
+                                <div id="computadora__cartas" class="cartas_html">
+                                    <!-- <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset="">
+                                    <img src="assets/img-cartas/10D.png" class="img_scala" alt="" srcset=""> -->
+                                </div>
+                            </div>
+                        </div>               
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
+    <script> 
+
+            document.querySelector('#boton__nuevoJuego').addEventListener('click',()=>{
+                miModulo.nuevoJuego();
+            })
+                
+    </script>
+</body>
+</html>

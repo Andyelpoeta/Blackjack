@@ -1,0 +1,168 @@
+html,body{
+    margin: 0;
+    color: white;  
+}
+
+.titulo{
+    text-align: center;
+    background-color:#000000;
+    padding: 13px 0;   
+}
+
+.color__letra:hover{
+    color: black;
+}
+
+.alinear{
+    justify-content: center;
+}
+
+.targeta{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px !important;
+    overflow: hidden;
+} 
+.cuerpo__targeta{
+   padding: 0;
+} 
+
+.caja__1{
+    width: 100%;
+    height: 250px; 
+    /* background-color: aqua;    */
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+.img_scala{
+
+    height: 200px; 
+    position: relative;
+    margin-left: -45px;
+    right: -23px;
+}
+
+@media (min-width: 1024px) {
+
+   
+    /* Agrega aquí tus estilos para pantallas de escritorio
+    .inicio__targeta{
+        width: 90%;
+    }
+   
+    .container{
+        margin: 0 auto;
+        ;
+    }
+    .adentro{
+        width: 100%;
+        
+        margin: 0 auto;
+    }
+    
+    #jugador__cartas,
+    #computadora__cartas {
+    /* margin: 0 auto; */
+    /* height: 180px;
+    padding: 0px;
+    }
+    .img_scala {
+        height: 180px;
+        left: 23px;
+
+    }   */
+  }
+  
+  /* Estilos para tabletas */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    /* Agrega aquí tus estilos para tabletas */
+    
+  }
+  
+  /* Estilos para teléfonos móviles */
+  @media (max-width: 767px)and (min-width: 481px) {
+    /* Agrega aquí tus estilos para teléfonos móviles */
+    
+    .targeta{
+        width: 90%;
+        
+    }
+    .grupo__botones{
+        margin: 10px auto;
+    } 
+    
+    .caja__1{
+        
+        height: 200px; 
+        /* background-color: aqua;    */
+        margin: 0 auto;
+        padding: 5px;
+        overflow: hidden;
+    }
+    .img_scala{
+
+        height: 150px; 
+        position: relative;
+        margin-left: -45px;
+        right: -23px;
+    }
+  }
+  @media (max-width: 480px)and (min-width: 362px) {
+    /* Agrega aquí tus estilos para teléfonos móviles */
+    .targeta{
+        width: 90%;
+        
+    }
+    .grupo__botones{
+        margin: 10px auto;
+    } 
+    .botone{
+        display: block;
+        /* margin: 0 auto; */
+        margin: 10px auto;
+    }   
+    .caja__1{
+        
+        height: 200px;  
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .img_scala{
+
+        height: 140px; 
+        position: relative;
+        margin-left: -45px;
+        right: -23px;
+    }
+  }
+  @media (max-width: 361px){
+    /* Agrega aquí tus estilos para teléfonos móviles */
+    .targeta{
+        width: 90%;
+        
+    }
+    .grupo__botones{
+        margin: 10px auto;
+    } 
+    .botone{
+        display: block;
+        /* margin: 0 auto; */
+        margin: 10px auto;
+    }   
+    .caja__1{
+        
+        height: 200px;  
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .img_scala{
+
+        height: 122px; 
+        position: relative;
+        margin-left: -45px;
+        right: -23px;
+    }
+  }
